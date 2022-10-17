@@ -3,15 +3,15 @@ package at.ran.basics;
 import java.util.Scanner;
 public class Bankomatbeispiel {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        boolean finish = false;
         int Kontostand = 0;
         System.out.println("Wählen Sie eine Funktion");
         System.out.println("1. Einzahlen");
         System.out.println("2. Abheben");
         System.out.println("3. Kontostand");
         System.out.println("4. Abbruch");
-        boolean finish = false;
-        int selection = 0;
+        Scanner scan = new Scanner(System.in);
+        int selection = scan.nextInt();
         while (!finish) {
             int Selection = scan.nextInt();
         }
