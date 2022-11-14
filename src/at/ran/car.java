@@ -1,4 +1,4 @@
-package at.ran.OO;
+package at.ran;
 
 public class car {
     // Instanz /Gedächtnis

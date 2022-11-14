@@ -1,13 +1,21 @@
 package at.ran.OO;
 
+import at.ran.car;
+
 public class Auto {
     public static void main(String[] args) {
-    int car1FuelConsumption = 7;
-    String car1Brand = "Audi";
-    String car2SerialNumber = "A1234";
+        car c1  = new car();
+        c1.brand = "Audi";
+        c1.fuelconsumption = 7;
+        c1.serialNumber = "A1234";
 
-    String[] cars = ("7; Audi; A1234");
-    String[] car1 = cars[0].split (";");
+        car c2  = new car();
+        c2.brand = "Mercedes";
+        c2.fuelconsumption = 6;
+        c2.serialNumber = "B1234";
+
+        System.out.println(c1.serialNumber);
+        System.out.println(c2.serialNumber);
 
     }
 
