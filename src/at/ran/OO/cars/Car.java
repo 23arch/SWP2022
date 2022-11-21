@@ -7,18 +7,19 @@ public class Car {
     public int totalFuel;
     public String brand;
     public String serialNumber;
-    private String color;
+    public String color;
 
 
-    public Car(int fc, String b, String s) {
-        this.fuelConsumption = fc;
-        this.brand = b;
-        this.serialNumber = s;
+    public Car(int fuelConsumption, String brand, String serialNumber) {
+        this.fuelConsumption = fuelConsumption;
+        this.brand = brand;
+        this.serialNumber = serialNumber;
     }
 
     //Methode
     public void drive() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
+        if (fuelAmount >= fuelConsumption)
         System.out.println("I am driving");
     }
 
