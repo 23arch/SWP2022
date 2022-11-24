@@ -2,12 +2,13 @@ package at.ran.OO.cars;
 
 public class Car {
     // Instanz /Gedächtnis
-    public int fuelConsumption;
-    public int fuelAmount;
-    public int totalFuel;
-    public String brand;
-    public String serialNumber;
-    public String color;
+    private int fuelConsumption;
+    private int fuelAmount;
+    private int totalFuel;
+    private int horsePower;
+    private String brand;
+    private String serialNumber;
+    private String color;
 
 
     public Car(int fuelConsumption, String brand, String serialNumber) {
@@ -17,6 +18,9 @@ public class Car {
     }
 
     //Methode
+    public void info(){
+        System.out.println("Ich bin ein "+ this.brand + "habe die Farbe" + this.color + "und habe" + this.horsePower + "ps");
+    }
     public void drive() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
         if (fuelAmount >= fuelConsumption)
@@ -44,4 +48,64 @@ public class Car {
         // fuelConsumption, fuelAmount
         System.out.println(fuelAmount / (double) fuelConsumption);
     }
+
+    public void setTank (int tank){
+        fuelAmount = tank;
+    }
+    public void setBrand(String brand){
+        this.brand = brand;
+    }
+
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setFuelAmount(int fuelAmount){
+        this.fuelAmount = fuelAmount;
+    }
+
+    public void setFuelConsumption(int fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public void setTotalFuel(int totalFuel) {
+        this.totalFuel = totalFuel;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public void setHorsePower(int horsePower) {
+        this.horsePower = horsePower;
+    }
+
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    public int getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public int getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public int getTotalFuel() {
+        return totalFuel;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
 }
+
