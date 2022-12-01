@@ -3,20 +3,11 @@ package at.ran.OO.cars;
 public class AutoMain {
     public static void main(String[] args) {
         // manuelle Erstellung
-        Car c1  = new Car(7,"Audi","A1234");
-        c1.setTotalFuel(20);
-        c1.setFuelAmount(15);
-        c1.setColor("green");
-        c1.setHorsePower(140);
+        Engine e1 = new Engine(140, Engine.TYPE.DIESEL);
+        Engine e2 = new Engine(200, Engine.TYPE.GAS);
 
-        Car c2  = new Car(6,"Mercedes","B1234");
-        c2.setTotalFuel(30);
-        c2.setFuelAmount(13);
-        c2.setColor("white");
-        c2.setHorsePower(90);
-
-        Car c3 = new Car(12,"Opel","C1234");
-        System.out.println(c3.getSerialNumber());
+        Car c1  = new Car(7,15,20,e1,"Audi","A1234","black");
+        Car c2  = new Car(6,13,30,e2,"Mercedes","B1234","white");
 
 
          //Ausgaben
@@ -27,6 +18,7 @@ public class AutoMain {
         c2.drive();
         c2.drive();
         System.out.println(c2.getFuelAmount());
+        c1.info();
 
         c2.turboBoost();
         c1.turboBoost();
@@ -34,6 +26,7 @@ public class AutoMain {
         c1.honk(15);
         c2.getRemainingRange();
         c1.getRemainingRange();
+        c1.getEngine();
     }
 
 

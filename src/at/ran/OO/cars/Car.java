@@ -5,28 +5,31 @@ public class Car {
     private int fuelConsumption;
     private int fuelAmount;
     private int totalFuel;
-    private int horsePower;
+    private Engine engine;
     private String brand;
     private String serialNumber;
     private String color;
 
-
-    public Car(int fuelConsumption, String brand, String serialNumber) {
+    public Car(int fuelConsumption, int fuelAmount, int totalFuel, Engine engine, String brand, String serialNumber, String color) {
         this.fuelConsumption = fuelConsumption;
+        this.fuelAmount = fuelAmount;
+        this.totalFuel = totalFuel;
+        this.engine = engine;
         this.brand = brand;
         this.serialNumber = serialNumber;
+        this.color = color;
     }
+
 
     //Methode
     public void info(){
-        System.out.println("Ich bin ein "+ this.brand + "habe die Farbe" + this.color + "und habe" + this.horsePower + "ps");
+        System.out.println("Ich bin ein "+ this.brand + " habe die Farbe " + this.color + " und habe " + this.getEngine().getHorsePower() + "ps");
     }
     public void drive() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
         if (fuelAmount >= fuelConsumption)
         System.out.println("I am driving");
-    }
-
+ }
     public void break2() {
         System.out.println("Ich bremse aus");
     }
@@ -46,7 +49,10 @@ public class Car {
 
     public void getRemainingRange() {
         // fuelConsumption, fuelAmount
-        System.out.println(fuelAmount / (double) fuelConsumption);
+        double result = fuelAmount / (double) fuelConsumption;
+        System.out.println(result);
+        if (result < 1)
+            System.out.println("Du solltest tanken!!");
     }
 
     public void setTank (int tank){
@@ -75,12 +81,12 @@ public class Car {
         this.serialNumber = serialNumber;
     }
 
-    public void setHorsePower(int horsePower) {
-        this.horsePower = horsePower;
+    public Engine getEngine() {
+        return engine;
     }
 
-    public int getHorsePower() {
-        return horsePower;
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 
     public int getFuelAmount() {
