@@ -1,11 +1,44 @@
 package at.ran.OO.lamp;
 
 public class Batterie {
+    public enum STATUS {ON, OF}
+    private String name;
+    private String color;
+    private int electricityConsumption;
+    private STATUS Status;
 
-    private int batterie;
-    public int status;
 
-    public void getStatus() {
-
+    public Batterie(String name, String color, int electricityConsumption, STATUS status) {
+        this.name = name;
+        this.color = color;
+        this.electricityConsumption = electricityConsumption;
+        this.Status = status;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
+    public void setElectricityConsumption(int electricityConsumption) {
+        this.electricityConsumption = electricityConsumption;
+    }
+
+    public int getElectricityConsumption() {
+        return electricityConsumption;
+    }
+
+
 }
