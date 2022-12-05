@@ -31,14 +31,14 @@ public class Batterie {
         this.color = color;
     }
 
-
+    public int getElectricityConsumption() {
+        return electricityConsumption;
+    }
     public void setElectricityConsumption(int electricityConsumption) {
         this.electricityConsumption = electricityConsumption;
     }
 
-    public int getElectricityConsumption() {
-        return electricityConsumption;
-    }
+
 
 
 }
