@@ -1,12 +1,10 @@
 package at.ran.OO.lamp;
 
-import at.ran.OO.lamp.Batterie;
-
 public class Lamp {
     private Batterie batterie1;
 
 
-    public Lamp(Batterie batterie1, Batterie batterie2) {
+    public Lamp(Batterie batterie1) {
         this.batterie1 = batterie1;
     }
 
@@ -23,11 +21,17 @@ public class Lamp {
     //addLightElement(LightElement):void um ein Glühelement dazu zu geben.
 
     //turnAllOn():void - Da werden alle Glühelemente eingeschaltet.
+    public void turnAllOn(){
 
+    }
     //getOverallPowerUsage(): double - Liefert den bisher verbrauchten Strom aller Glühelemente zurück.
+    public void getOverallPowerUsage(){
 
+    }
     //printNamesOfLightElements():void - Printet die Namen aller Lichtelemen auf die Konsole.
+    public void printNamesOfLightElements(){
 
+    }
 
 
 
