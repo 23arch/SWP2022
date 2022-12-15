@@ -1,0 +1,17 @@
+package at.ran.OO.cars;
+
+public class Truckkun extends Car{
+    private String trailer;
+    public Truckkun(int fuelConsumption, int fuelAmount, int totalFuel, Engine engine, String brand, String serialNumber, String color, String trailer) {
+        super(fuelConsumption, fuelAmount, totalFuel, engine, brand, serialNumber, color);
+        this.trailer = trailer;
+    }
+
+    public String getTrailer() {
+        return trailer;
+    }
+
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
+    }
+}
