@@ -2,7 +2,7 @@ package at.ran.basics;
 
 import java.util.Scanner;
 
-public class Bankomatbeispiel {
+public class aBankomatbeispiel {
     public static void main(String[] args) {
         boolean finish = false;
         int Kontostand = 0;
