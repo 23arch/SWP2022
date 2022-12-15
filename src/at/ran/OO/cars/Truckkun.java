@@ -14,4 +14,10 @@ public class Truckkun extends Car{
     public void setTrailer(String trailer) {
         this.trailer = trailer;
     }
+
+    @Override
+    public void drive() {
+        System.out.println("I am driving -- consumption is high");
+        //super.drive();
+    }
 }
