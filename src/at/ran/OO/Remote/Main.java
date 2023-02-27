@@ -7,6 +7,6 @@ public class Main {
         Batterie b2 = new Batterie(80);
         Remote r1 = new Remote(b1, b2);
 
-        System.out.println("a");
+
     }
 }
