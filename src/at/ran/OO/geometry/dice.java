@@ -1,4 +1,4 @@
-package at.ran.geometry;
+package at.ran.OO.geometry;
 
 public class dice {
     private String dice;

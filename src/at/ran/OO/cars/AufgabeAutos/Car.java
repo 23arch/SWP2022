@@ -36,4 +36,12 @@ public class Car {
         System.out.println("Driving");
         return 0;
     }
+
+    public int getEnginePower() {
+        return engine.getHorsePower();
+    }
+
+    public Engine getEngine() {
+        return this.engine;
+    }
 }

@@ -1,4 +1,4 @@
-package at.ran.geometry;
+package at.ran.OO.geometry;
 
 public class Figures {
     private square square;

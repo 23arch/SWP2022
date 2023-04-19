@@ -8,5 +8,7 @@ public class Main
         Car c1 = new Car("red",123,8, e1, p1, 8000);
         c1.getDrive(100);
         System.out.println(c1.getPrice());
+        System.out.println(c1.getEngine().getHorsePower());
     }
 }
+

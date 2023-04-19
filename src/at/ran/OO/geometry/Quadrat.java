@@ -1,4 +1,4 @@
-package at.ran.geometry;
+package at.ran.OO.geometry;
 
 public class Quadrat {
     private String quadrat;
